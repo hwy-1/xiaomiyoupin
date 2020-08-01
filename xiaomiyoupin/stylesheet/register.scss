@@ -1,0 +1,342 @@
+@import "reset";
+
+/*css reset*/
+body {
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    background-color: #f9f9f9;
+    color: #333;
+    font-size: 14px;
+
+}
+
+/*css common*/
+.l {
+    float: left;
+}
+
+.r {
+    float: right;
+}
+
+.clear:after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+    visibility: hidden;
+    height: 0px;
+}
+
+.clear {
+    zoom: 1;
+}
+
+/*版心*/
+.container {
+    width: 1080px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/*通栏*/
+.container-fluid {
+    position: relative;
+}
+
+h2 {
+    font-size: 28px;
+    color: #333;
+    font-weight: 400;
+    display: flex;
+}
+
+#register {
+    width: 100%;
+    height: 100%;
+
+    .layout {
+        margin: 0 auto;
+        width: 786px;
+        // height: 600px;
+        padding: 0 34px 30px 34px;
+        background-color: #fff;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+
+        .logo {
+            padding-bottom: 40px;
+
+            img {
+                width: 49px;
+                height: 48px;
+            }
+        }
+
+        .title {
+            font-size: 30px;
+            color: #333;
+            margin-bottom: 30px;
+
+        }
+
+        .regionPhone {
+            cursor: pointer;
+
+            .region {
+                padding-bottom: 5px;
+            }
+
+            .country {
+                width: 330px;
+                height: 40px;
+                border: 1px solid #e8e8e8;
+                line-height: 40px;
+
+                .country-select-icon {
+
+                    padding-left: 14px;
+                    display: flex;
+
+                    .country-select {
+                        width: 276px;
+                        border-right: 1px solid #e8e8e8;
+                    }
+
+                    .country-icon {
+                        width: 16px;
+                        height: 16px;
+                        background-image: url("../images/icon_user.png");
+                        margin: 11px 12px 0 12px;
+                    }
+                }
+            }
+
+            .register-success {
+                width: 332px;
+                height: 20px;
+                line-height: 20px;
+                color: #666;
+                margin: 10px 0px 15px 0px;
+            }
+            // 手机号
+            .Phone {
+
+                .phone {
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                }
+
+                .phone-number {
+                    width: 330px;
+                    height: 40px;
+                    border: 1px solid #e8e8e8;
+                    line-height: 40px;
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    div {
+                        width: 54px;
+                        height: 40px;
+                        padding: 0 9px;
+                        display: flex;
+                        align-items: center;
+                        border-right: 1px solid #e8e8e8;
+
+                        i {
+                            width: 0px;
+                            height: 0px;
+                            border-width: 5px;
+                            border-style: solid;
+                            border-color: #9d9d9d transparent transparent transparent;
+                            margin-left: 10px;
+
+                        }
+                    }
+
+                    input {
+                        height: 20px;
+                        line-height: 20px;
+                        padding: 10px;
+                        width: 236px;
+                        outline-style: none;
+                        border: 0;
+                    }
+
+                }
+
+                #reminder {
+                    display: block;
+                    display: none;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #f66;
+                    // margin: 15px 0px;
+                }
+            }
+            // 密码
+            .Password {
+
+                .password {
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                }
+
+                .password-number {
+                    width: 330px;
+                    height: 40px;
+                    border: 1px solid #e8e8e8;
+                    line-height: 40px;
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    div {
+                        width: 54px;
+                        height: 40px;
+                        padding: 0 9px;
+                        display: flex;
+                        align-items: center;
+                        border-right: 1px solid #e8e8e8;
+                    }
+
+                    input {
+                        height: 20px;
+                        line-height: 20px;
+                        padding: 10px;
+                        width: 236px;
+                        outline-style: none;
+                        border: 0;
+                    }
+
+                }
+
+                #passwordReminder {
+                    display: block;
+                    display: none;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #f66;
+                    // margin: 15px 0px;
+                }
+            }
+            // 确认密码
+            .RePassword {
+
+                .rePassword {
+                    height: 20px;
+                    line-height: 20px;
+                    font-size: 14px;
+                    padding-bottom: 5px;
+                }
+
+                .rePassword-number {
+                    width: 330px;
+                    height: 40px;
+                    border: 1px solid #e8e8e8;
+                    line-height: 40px;
+                    display: flex;
+                    margin-bottom: 15px;
+
+                    div {
+                        width: 54px;
+                        height: 40px;
+                        padding: 0 9px;
+                        display: flex;
+                        align-items: center;
+                        border-right: 1px solid #e8e8e8;
+
+                    
+                    }
+
+                    input {
+                        height: 20px;
+                        line-height: 20px;
+                        padding: 10px;
+                        width: 236px;
+                        outline-style: none;
+                        border: 0;
+                    }
+
+                }
+
+                #rePasswordReminder {
+                    display: block;
+                    display: none;
+                    line-height: 20px;
+                    font-size: 14px;
+                    color: #f66;
+                    // margin: 15px 0px;
+                }
+            }
+        }
+        // 注册
+        .nowRegion {
+            width: 328px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #ff6700;
+            text-align: center;
+            border: 1px solid rgba(186, 186, 186, .3);
+            color: #fff;
+            cursor: pointer;
+            margin-top: 15px;
+
+            &:hover {
+                background-color: #ff936a;
+            }
+        }
+
+        .privacy {
+            margin-top: 40px;
+            padding: 10px 0px;
+            color: #9d9d9d;
+
+            a {
+                color: #333;
+                font-weight: bold;
+            }
+        }
+    }
+
+    footer {
+        margin: 0 auto;
+        width: 786px;
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #9d9d9d;
+        font-size: 14px;
+
+        a {
+            color: #9d9d9d;
+        }
+
+        .clearfix {
+            ul {
+                height: 19px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 10px;
+
+                li {
+                    a {
+                        color: #9d9d9d;
+                        padding: 0 5px;
+                    }
+                }
+            }
+        }
+    }
+}
